@@ -154,7 +154,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     */
 
-    // Animação dos cards de projeto
+    // Animação dos cards de projeto - COMENTADO para manter estático
+    /*
     document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) scale(1.02)';
@@ -167,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
         });
     });
+    */
 
     // Animação dos botões - COMENTADO para manter estático
     /*
