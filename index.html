@@ -16,18 +16,39 @@
     <!-- CSS Externo -->
     <link rel="stylesheet" href="css/style.css">
     
-    <!--Contato Via Whatsapp-->
-    <script type="text/javascript">
-              window.onload = function(){
-              (function(d, script) {
-              script = d.createElement('script');
-              script.type = 'text/javascript';
-              script.async = true;
-              script.src = 'https://w.app/widget-v1/YqwuMZ.js';
-              d.getElementsByTagName('head')[0].appendChild(script);
-              }(document));
-              };
-              </script>
+    <!--Contato Via Whatsapp - Botão Flutuante-->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            color: #FFF;
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-float i {
+            margin-top: 16px;
+        }
+    </style>
     <!--Inclusão do favicon na guia -->
     <link rel="icon" href="assets/images/Foto_Jessica.jpg" type="image/png">
     <link rel="shortcut icon" href="assets/images/Foto_Jessica.jpg" type="image/x-icon">
@@ -80,6 +101,11 @@
     <button class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
+    
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5561983368180" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     
     <!-- Meu Cabeçalho-->
     <div id="home" class="container-fluid" style="background: #e0cffc; color: #3d0c6e; border-radius: 0 0 16px 16px; border-bottom: 2px solid #bfa3f7; padding-top: 100px;">
