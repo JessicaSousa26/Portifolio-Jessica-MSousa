@@ -1,6 +1,7 @@
 // JavaScript completo para o portfólio - com animações e APIs
 
-// Inicializar AOS quando disponível
+// Inicializar AOS quando disponível - COMENTADO para manter estático
+/*
 if (typeof AOS !== 'undefined') {
     AOS.init({
         duration: 800,
@@ -9,6 +10,7 @@ if (typeof AOS !== 'undefined') {
         offset: 100
     });
 }
+*/
 
 // API Functions
 class PortfolioAPI {
@@ -93,7 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 
-    // Animação das barras de progresso
+    // Animação das barras de progresso - COMENTADO para manter estático
+    /*
     function animateProgressBars() {
         const progressBars = document.querySelectorAll('.progress-bar');
         
@@ -127,8 +130,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (skillsSection) {
         observer.observe(skillsSection);
     }
+    */
 
-    // Efeito parallax suave
+    // Efeito parallax suave - COMENTADO para manter estático
+    /*
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const parallaxElements = document.querySelectorAll('[data-aos]');
@@ -139,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.transform = `translateY(${yPos}px)`;
         });
     });
+    */
 
     // Adicionar efeito hover às redes sociais - COMENTADO para manter estático
     /*
@@ -184,7 +190,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     */
 
-    // Efeito de pulse nos ícones de habilidades
+    // Efeito de pulse nos ícones de habilidades - COMENTADO para manter estático
+    /*
     document.querySelectorAll('.skill-icon').forEach(icon => {
         setInterval(() => {
             icon.style.animation = 'pulse 1s ease-in-out';
@@ -193,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000);
         }, 3000);
     });
+    */
 
     // Formulário de contato
     const contactForm = document.getElementById('contactForm');
